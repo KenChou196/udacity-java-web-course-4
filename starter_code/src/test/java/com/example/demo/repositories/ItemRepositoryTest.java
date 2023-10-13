@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 import java.util.List;
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ItemTest {
+public class ItemRepositoryTest {
     @Autowired
     ItemRepository itemRepository;
     @Test

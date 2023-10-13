@@ -17,7 +17,7 @@ import java.math.BigDecimal;
 import java.util.Collections;
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class CartTest {
+public class CartRepositoryTest {
     @Autowired
     CartRepository cartRepository;
     @Autowired
@@ -44,8 +44,8 @@ public class CartTest {
         userRepository.save(user);
 
         User user1 = userRepository.findByUsername("John_Doe");
+        Assert.assertNotNull(user1);
         Cart foundCart = cartRepository.findByUser(user1);
-
         Assert.assertNotNull(foundCart);
         Assert.assertEquals("Super chip set for computer",cart.getItems().get(0).getDescription());
         Assert.assertEquals("AMD_Ryzen9", cart.getItems().get(0).getName());

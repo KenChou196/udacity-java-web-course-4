@@ -24,7 +24,8 @@ import static org.mockito.Mockito.when;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class UserTest {
+@Transactional
+public class UserControllerTest {
     private UserController userController;
     private final UserRepository userRepository = mock(UserRepository.class);
     private final CartRepository cartRepository = mock(CartRepository.class);

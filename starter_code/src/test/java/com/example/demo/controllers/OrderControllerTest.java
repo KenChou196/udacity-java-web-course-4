@@ -20,14 +20,13 @@ import javax.transaction.Transactional;
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class OrderTest {
+public class OrderControllerTest {
     OrderController orderController;
     // mock a repo
     private UserRepository userRepository = mock(UserRepository.class);

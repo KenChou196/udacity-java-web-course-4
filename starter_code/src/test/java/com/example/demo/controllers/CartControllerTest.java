@@ -3,7 +3,6 @@ package com.example.demo.controllers;
 
 import com.example.demo.model.persistence.Cart;
 import com.example.demo.model.persistence.User;
-import com.example.demo.model.persistence.repositories.ItemRepository;
 import com.example.demo.model.persistence.repositories.UserRepository;
 import com.example.demo.model.requests.CreateUserRequest;
 import com.example.demo.model.requests.ModifyCartRequest;
@@ -13,14 +12,13 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.transaction.Transactional;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class CartTest {
+public class CartControllerTest {
     @Autowired
     private CartController cartController;
     @Autowired

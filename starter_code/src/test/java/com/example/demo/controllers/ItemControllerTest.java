@@ -11,13 +11,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.transaction.Transactional;
-import java.math.BigDecimal;
 import java.util.List;
 import java.util.Objects;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ItemTest {
+public class ItemControllerTest {
     @Autowired
     private ItemRepository itemRepository;
     @Autowired

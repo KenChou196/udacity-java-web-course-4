@@ -22,7 +22,7 @@ import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class OrderTest {
+public class OrderRepositoryTest {
     @Autowired
     OrderRepository orderRepository;
     @Autowired
